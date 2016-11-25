@@ -25,7 +25,7 @@ import java.util.Collection;
 
 @ComponentScan
 @EnableAutoConfiguration(exclude = { MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class, MetricsDropwizardAutoConfiguration.class })
-@EnableConfigurationProperties({ JHipsterProperties.class, LiquibaseProperties.class })
+@EnableConfigurationProperties({ JHipsterProperties.class, LiquibaseProperties.class,AlphaServerConfigs.class })
 @EnableDiscoveryClient
 @EnableZuulProxy
 public class AlphaserverApp {
